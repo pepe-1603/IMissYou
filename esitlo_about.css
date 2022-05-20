@@ -1,0 +1,102 @@
+
+    
+
+.pie-pagina{
+    background-color:   #262626;
+    position: inherit;/*hacemos que ocupe todo el documento*/
+   /*se cambioposition: relative ;//este hace que se esconda el navbar cuando estemos en moviles*/
+    bottom: 0;/* el footer se posiciona siempre en el final*/
+    width: 100vw;
+    height: 20%;
+
+}
+
+.pie-pagina .grupo-1{
+    width: 100vw;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;/*tamaño de columnas*/
+    padding: 45px 50px;
+}
+
+.pie-pagina .grupo-1 .box img{
+    width: 200px;
+    height: 150px;
+    border-radius: 10px;
+}
+/** Centrar img en el contenedor {sectio}*/
+.pie-pagina .grupo-1 .box figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pie-pagina .grupo-1 .box h3{
+    font-size: 25px;
+    margin-bottom: 25px;
+    color: #fff;
+}
+.pie-pagina .grupo-1 .box p{
+    color: #efefef;
+    margin-bottom: 25px;
+    font-size: 16px;
+}
+
+.pie-pagina .grupo-1 .red-social a{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    margin-right: 10px;
+    background-color: #34393f;
+    text-align: center;
+    
+    transition: all .4s;
+} 
+.pie-pagina .grupo-1 .red-social a:hover{
+    border-radius: 10px;
+    
+    color: blueviolet;
+
+}
+.pie-pagina .grupo-2{
+    
+    background-color: #34393f;
+    padding: 15px 10px;
+    
+    color: #F1F1F1;
+    text-align: center;
+}
+.pie-pagina .grupo-2 small{
+    font-size: 15px;
+}
+@media screen and (max-width: 800px) {
+
+    .pie-pagina .grupo-1{
+    width: 100vw;
+    grid-template-columns: repeat(1, 1fr);/*dsiminuir a 1 colm*/
+    grid-gap: 30px;/*margen de cada colm*/
+    padding: 45px 0px;/*rellen del contemedor*/
+    text-align: center;
+    
+    }
+
+    
+}
+
+/*
+
+.btn_sociales {
+
+    display: blo;
+    font-size: 25px;
+    text-decoration: none;
+    margin: 40px;
+    
+}*/
+

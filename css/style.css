@@ -1,0 +1,327 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Roboto, sans-serif;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+/*---- index */
+
+.titulo {
+    display: block;
+    font-size: 22px;
+    background-color: rgb(255,255,255);
+    color: black;
+    text-align: center;
+    margin: 10px 0px;
+    padding: 10px;
+}
+.seccion-uno{
+    margin: 50px;
+    
+    border-radius: 1rem;
+}
+.seccion-dos:hover{
+    box-shadow: 0 .5px 1rem;
+}
+.seccion-uno img{
+    margin: 50px 80px;
+    padding: 4rem 3.5rem;
+    width: 450px;
+    height: auto;
+}
+
+.seccion-dos{
+    margin: 50px;
+    padding: 10px;
+    font-size: 17px;
+
+}
+
+.seccion-dos p{
+    padding-top: 15px;
+    text-align: justify;
+    border-radius: 1rem;
+}
+
+.titulo a{
+    background: black ;
+    border-radius: 15px;
+    padding: 5px 10px;
+    margin-bottom: 25px;
+    font-size: medium;
+    color: #fff;
+}
+.titulo a:hover{
+    
+    transition: all 1.4 ;
+    padding: 5px 8px;
+}
+
+@media (max-width:750px) {
+    .titulo{
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+    }
+    .seccion-uno img{
+        margin: 10px 30px;
+        padding: .5rem .5rem;
+        width: 250px;
+        height: auto;
+    }
+    .seccion-dos{
+        margin: 100px 0px;
+        padding: 5px;
+        font-size: 16px;
+    
+    }
+    .titulo a{
+        width: 10rem;
+        margin: 1rem;
+        background: black ;
+        border-radius: 15px;
+        padding: 5px 10px;
+        margin-bottom: 25px;
+        font-size: medium;
+        color: #fff;
+    }
+
+}
+
+
+/*-pagina Home*/
+
+.caja{
+
+    width: 100%;
+    height: 100%;
+    display: block;
+    margin: 80px 0px 25px 0px;
+    padding: 20px 0px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.caja .box-seccion{
+    justify-content: space-between;
+    margin: 100px 0px;
+    padding-bottom: 160px;
+    
+
+}
+.caja .box-seccion:hover{
+    border-radius: 2rem;
+    text-shadow: 0 .5rem 1rem;
+}
+
+.caja .box-seccion img{
+    
+    width: 450px;
+    height: auto;
+}
+.caja .box-seccion .text .link-a:hover{
+    margin: 5px 2px;
+    padding: 5px 4px;
+   /* background: rgba(219, 211, 211, .2);*/
+    font-size: 17px;
+    white-space: 1px;
+    color: #612a81;
+    font-weight: 300;
+    transition: .3s;
+    text-decoration: underline;
+    border-radius: 5px;
+}
+.cont-center{
+width: 100%;
+height: auto;
+justify-content: center;
+
+}
+
+.center{
+    padding: 15px 0px;
+    display: flex;
+   justify-content: center;
+   align-items: center;
+
+}
+.center img{
+    width: 250px;
+    height: auto;
+    padding: 5px 5px;
+}
+.center .btn{
+    font-size: 18;
+    padding: 10px 32px;
+    background: rgba(96, 209, 190, 0.8);
+    border-radius: 5px;
+    color: black;
+}
+.center .btn:hover{
+    color: black;
+    background: aquamarine;
+    font-weight: bold;
+    transition: all 0.4s;
+}
+
+/*PAgina home*/
+
+.container-videos .heading{
+    font-size: 3rem;
+    margin: 2rem 0rem;
+    font-weight: bold;
+    text-transform: capitalize;
+    color: black;
+    letter-spacing: .2rem ;
+    text-align: center;
+    text-shadow: 0 0.3rem .5rem rgba(0, 0, 0, .3);
+}
+
+.box-videos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+    /*modificamos los contenedorder de los videos*/
+.box-videos .item-video{
+    height: 15rem;
+    width: 25rem;
+    margin: 2rem;
+    overflow: hidden;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .5);
+    border-radius: 1rem;
+}
+/*modificamos el tamaño del video (tang:video)*/
+.box-videos .item-video video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    outline: none;
+    border: none;
+    cursor: pointer;
+
+}
+.box-videos .item-video video:hover{
+    transition: .4s linear;
+    /*para ponercuando coloquemos el cursor al video este de una animacion de acercamiento*/
+    transform: scale(1.05);
+    
+}
+.box-videos .item-video a{
+    margin: 15px 0px;
+    font-size: 20px;
+}
+
+.cnt-btn {
+    text-align: center;
+    margin: 2rem 2rem;
+
+}
+.cnt-btn a{
+    margin: 1rem auto;
+    padding: .5rem 1rem;
+    background-color: rgba(0, 0, 0, .8);;
+    border-radius: 15px ;
+    color: #fff;
+}
+.cnt-btn a:hover{
+    transition: all .4s;
+    
+    font-size: 16.5px;
+    padding: .6rem 1.1rem;
+    box-shadow: 2px 2px 3px ;
+    word-spacing: 1.5px;
+
+}
+
+/*------ galery music*/
+
+.contenedor-audios{
+    background: #222;
+    color: #fff;
+    padding-bottom: 20px;
+}
+
+.contenedor-audios .heading{
+    font-size: 3rem;
+    padding: 2rem 0;
+    text-align: center;
+    box-shadow: 0rem .5rem 1rem #000;
+    color: #fff;
+}
+
+
+.contenedor-audios .music-container{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.contenedor-audios .music-container .box{
+    height: 14rem; width: 80%;
+    margin: 2rem;
+    display: flex;
+    align-items: center;
+    border-radius: 1rem;
+    box-shadow: 0rem .5rem 1rem #000;
+    overflow: hidden;
+    background: #f9f9f9;
+}
+.contenedor-audios .music-container .box .image{
+    height: 100%;   width: 25%;
+}
+.contenedor-audios .music-container .box .image img{
+    height: 100%;   width: 100%;
+} 
+
+
+.contenedor-audios .music-container .box .music{
+    width: 75%; height: auto;
+}
+
+.contenedor-audios .music-container .box .music audio{
+    width: 100%;
+    outline: none;
+}
+
+/*borramos el simbolo de las opciones en el reproductor de audios por default*/
+.contenedor-audios .music-container .box .music audio::-webkit-media-controls-enclosure{
+    background: none;
+}
+
+.contenedor-audios .music-container P{
+    padding-top: 2rem;
+    text-align: justify;
+    padding-bottom: .5rem;
+}
+.contenedor-audios .music-container a{
+    background: rgba(15, 110, 117, 1);
+    padding: 5px 10px;
+    border-radius: 7px;
+    color: #222;
+    font-weight: 500;
+}
+.contenedor-audios .music-container a:hover{
+    color: #fff;
+}
+
+@media (max-width:650px) {
+    .contenedor-audios .music-container .box{
+        height: 27rem;
+        width: 90%;
+        flex-flow: column;
+    }
+
+    .contenedor-audios .music-container .box .image{
+        height: 80%;    width: 100%;
+    }
+
+    .contenedor-audios .music-container .box .music{
+        height: 80%;    width: 100%;
+    }
+    
+}
