@@ -24,7 +24,7 @@
     border-radius: 1rem;
 }
 .seccion-dos:hover{
-    box-shadow: 0 .5px 1rem;
+    text-shadow: 0 .5px 1rem;
 }
 .seccion-uno img{
     margin: 50px 80px;
@@ -49,7 +49,7 @@
 .titulo a{
     background: black ;
     border-radius: 15px;
-    padding: 5px 10px;
+    padding: 5px 8px;
     margin-bottom: 25px;
     font-size: medium;
     color: #fff;
@@ -57,7 +57,7 @@
 .titulo a:hover{
     
     transition: all 1.4 ;
-    padding: 5px 8px;
+    padding: 6px 10px;
 }
 
 @media (max-width:750px) {
@@ -117,8 +117,17 @@
     text-shadow: 0 .5rem 1rem;
 }
 
-.caja .box-seccion img{
-    
+.caja .box-seccion h2{
+    padding-bottom: 1rem;
+}
+.caja .box-seccion p{
+    letter-spacing: .5px;
+    font-weight: 450;
+    padding: .2rem;
+}
+
+.caja .box-seccion .text img{
+    padding: 1rem 0rem;
     width: 450px;
     height: auto;
 }
@@ -167,17 +176,56 @@ justify-content: center;
     transition: all 0.4s;
 }
 
-/*PAgina home*/
+/*Responsive con media()*/
+@media (max-width:750px){
+    .caja{
+        margin: 10px 0px;
+        padding: 0px;
+    }
+    .caja .box-seccion{
+        margin: 80px 0px;
+        padding-bottom: 160px;
+        
+    }
 
-.container-videos .heading{
+    .caja ,.box-seccion .text h2{
+        font-size: 22px;
+    }
+    .caja ,.box-seccion .text p{
+        padding: 0 .5rem;
+        font-size: 18px;
+    }
+    .caja .box-seccion .text img{
+        padding: 1rem 0rem;
+        width: 250px;
+        height: auto;
+    }
+    .center {
+        text-align: center;
+    }
+    .center img{
+        width: 120px;
+        height: auto;
+        padding: 5px 5px;
+    }
+}
+
+
+/*PAgina videos*/
+
+.container-videos .heading .tito{
     font-size: 3rem;
     margin: 2rem 0rem;
-    font-weight: bold;
+    font-weight: 500;
     text-transform: capitalize;
     color: black;
-    letter-spacing: .2rem ;
+    letter-spacing: .1rem ;
     text-align: center;
-    text-shadow: 0 0.3rem .5rem rgba(0, 0, 0, .3);
+    text-shadow: 0 0.5rem .5rem #222;
+}
+.container-videos .heading p{
+    text-align: center;
+    font-size: 1.5rem;
 }
 
 .box-videos {
@@ -262,7 +310,7 @@ justify-content: center;
 }
 
 .contenedor-audios .music-container .box{
-    height: 14rem; width: 80%;
+    height: 9rem; width: 80%;
     margin: 2rem;
     display: flex;
     align-items: center;
@@ -272,7 +320,7 @@ justify-content: center;
     background: #f9f9f9;
 }
 .contenedor-audios .music-container .box .image{
-    height: 100%;   width: 25%;
+    height: 100%;   width: 20%;
 }
 .contenedor-audios .music-container .box .image img{
     height: 100%;   width: 100%;
@@ -299,6 +347,7 @@ justify-content: center;
     padding-bottom: .5rem;
 }
 .contenedor-audios .music-container a{
+    margin-top: 2rem;
     background: rgba(15, 110, 117, 1);
     padding: 5px 10px;
     border-radius: 7px;
@@ -307,17 +356,30 @@ justify-content: center;
 }
 .contenedor-audios .music-container a:hover{
     color: #fff;
+    padding: 6px 11px;
 }
 
 @media (max-width:650px) {
+    .contenedor .heading{
+        height: .5rem;
+        margin: 0;
+        padding: 0rem ;
+        margin: 0;
+        box-shadow: 0 .5rem 1rem;
+
+    }
+    .contenedor-audios .heading h2{
+        font-size: 28px;
+    }
     .contenedor-audios .music-container .box{
-        height: 27rem;
-        width: 90%;
+        height: 19rem;
+        width: 86%;
         flex-flow: column;
     }
 
     .contenedor-audios .music-container .box .image{
-        height: 80%;    width: 100%;
+        padding: .5rem;
+        height: 85%;    width: 100%;
     }
 
     .contenedor-audios .music-container .box .music{
